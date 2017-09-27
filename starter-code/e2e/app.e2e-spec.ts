@@ -1,10 +1,10 @@
-import { MyPersonalPagePage } from './app.po';
+import { StarterCodePage } from './app.po';
 
-describe('my-personal-page App', function() {
-  let page: MyPersonalPagePage;
+describe('starter-code App', function() {
+  let page: StarterCodePage;
 
   beforeEach(() => {
-    page = new MyPersonalPagePage();
+    page = new StarterCodePage();
   });
 
   it('should display message saying app works', () => {
