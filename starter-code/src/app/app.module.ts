@@ -3,8 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
-
-
+import {
+  ActivatedRoute
+} from '@angular/router';
+import {
+  CinemaService
+} from './services/cinema.service';
 import { AppComponent } from './app.component';
 import { MyHomeComponent } from './my-home/my-home.component';
 import { MyMovieComponent } from './my-movie/my-movie.component';
@@ -25,9 +29,9 @@ const routes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-		RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [CinemaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
